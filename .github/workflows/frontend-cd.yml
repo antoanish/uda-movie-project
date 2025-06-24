@@ -93,7 +93,7 @@ jobs:
       run: |
         docker build \
             --build-arg=REACT_APP_MOVIE_API_URL="http://$REACT_APP_MOVIE_API_URL/" \
-            -t $IMAGE_NAME:$IMAGE_TAG \
+            -t $REPO_NAME:$IMAGE_TAG \
             .
         docker push 714965767625.dkr.ecr.us-east-1.amazonaws.com/$REPO_NAME:$IMAGE_TAG
 
